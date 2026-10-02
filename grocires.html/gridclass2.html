@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CSS Grid Website</title>
+
+    <style>
+
+        /* Remove default spacing */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+        }
+
+        /* ================= HEADER ================= */
+
+        header {
+            background-color: #222;
+            color: white;
+            text-align: center;
+            padding: 30px;
+        }
+
+        header h1 {
+            margin-bottom: 10px;
+        }
+
+        /* ================= NAVIGATION ================= */
+
+        nav {
+            background-color: #444;
+
+            display: flex;
+            justify-content: center;
+
+            gap: 30px;
+
+            padding: 15px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        nav a:hover {
+            color: yellow;
+        }
+
+        /* ================= GRID ================= */
+
+        .grid-container {
+
+            width: 90%;
+
+            margin: 30px auto;
+
+            /* Important Grid Property */
+            display: grid;
+
+            /* 3 equal columns */
+            grid-template-columns: repeat(3, 1fr);
+
+            /* Space between boxes */
+            gap: 20px;
+        }
+
+        /* ================= CARDS ================= */
+
+        .card {
+
+            background-color: white;
+
+            padding: 30px;
+
+            border-radius: 10px;
+
+            text-align: center;
+
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card h2 {
+            margin-bottom: 15px;
+        }
+
+        .card p {
+            color: #555;
+            line-height: 1.5;
+        }
+
+        /* ================= FOOTER ================= */
+
+        footer {
+            background-color: #222;
+
+            color: white;
+
+            text-align: center;
+
+            padding: 20px;
+
+            margin-top: 30px;
+        }
+
+        /* ================= RESPONSIVE ================= */
+
+        @media (max-width: 700px) {
+
+            .grid-container {
+
+                /* One column on small screens */
+                grid-template-columns: 1fr;
+            }
+
+            nav {
+                flex-direction: column;
+                align-items: center;
+                gap: 15px;
+            }
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+
+    <header>
+
+        <h1>My Grid Website</h1>
+
+        <p>Learning CSS Grid Layout</p>
+
+    </header>
+
+
+    <!-- ================= NAVIGATION ================= -->
+
+    <nav>
+
+        <a href="#">Home</a>
+
+        <a href="#">About</a>
+
+        <a href="#">Services</a>
+
+        <a href="#">Contact</a>
+
+    </nav>
+
+
+    <!-- ================= GRID CONTENT ================= -->
+
+    <main class="grid-container">
+
+        <div class="card">
+
+            <h2>HTML</h2>
+
+            <p>
+                HTML is used to create the
+                structure of a webpage.
+            </p>
+
+        </div>
+
+
+        <div class="card">
+
+            <h2>CSS</h2>
+
+            <p>
+                CSS is used to style and
+                design webpages.
+            </p>
+
+        </div>
+
+
+        <div class="card">
+
+            <h2>JavaScript</h2>
+
+            <p>
+                JavaScript makes webpages
+                interactive.
+            </p>
+
+        </div>
+
+
+        <div class="card">
+
+            <h2>Python</h2>
+
+            <p>
+                Python is a popular
+                programming language.
+            </p>
+
+        </div>
+
+
+        <div class="card">
+
+            <h2>SQL</h2>
+
+            <p>
+                SQL is used to work with
+                databases.
+            </p>
+
+        </div>
+
+
+        <div class="card">
+
+            <h2>Web Development</h2>
+
+            <p>
+                Web development combines
+                HTML, CSS and JavaScript.
+            </p>
+
+        </div>
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <p>© 2026 My Grid Website</p>
+
+    </footer>
+
+</body>
+
+</html>

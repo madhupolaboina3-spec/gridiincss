@@ -1,0 +1,118 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .header{
+            background-color: bisque;
+            text-align: center;
+
+        }
+       .main {
+
+            width: 90%;
+
+            margin: 30px auto;
+
+            
+            display: grid;
+
+            
+            grid-template-columns: repeat(3, 1fr);
+
+            
+            gap: 20px;
+
+            /* background-color: antiquewhite; */
+        }
+        .card {
+
+            background-color: white;
+
+            padding: 30px;
+
+            border-radius: 10px;
+
+            text-align: center;
+
+            box-shadow: 0 3px 10px rgba(2, 232, 14, 0.15);
+
+            transition: 0.3s;
+           
+        }
+         .card:hover {
+            transform: translateY(-5px);
+        }
+        .footer{
+            background-color: blanchedalmond;
+            text-align: center;
+            padding: 20px;
+            margin-top: 30px;
+        }
+        
+    </style>
+</head>
+<body>
+    <header class="header">
+       <h1>MOVIE'S ZONE</h1>
+       <P>Know about your Movie</P>
+    </header>
+    <main class="main">
+        <div class="card">
+             <a href="https://www.google.com/search?q=paradise+movie&rlz=1C1GCEA_en-GBIN1171IN1172&sca_esv=3d2f9fa888dd4596&biw=1280&bih=585&sxsrf=APpeQntEhu93z4NsmeT3nZfW3ugyHiZGiw%3A1790935800629&ei=-IK_auXhJfaahvcPmcPxkQg&oq=paradisemovie&gs_lp=Egxnd3Mtd2l6LXNlcnAiDXBhcmFkaXNlbW92aWUqBggAGAcYHjIGEAAYBxgeMgYQABgHGB4yBhAAGAcYHjIGEAAYBxgeMgYQABgHGB4yBhAAGAcYHjIGEAAYBxgeMgYQABgHGB4yBhAAGAcYHjIGEAAYBxgeSN8sUJ0CWMEdcAB4ApABAJgB_QGgAfgVqgEGMC4xMC41sAEAuAEByAEA-AEBmAIJoAL-CsICBBAAGEfCAgcQIxixAhgnwgIREC4YgAQYigUYkQIYsQMYgwHCAgsQABiABBiKBRiRAsICIBAuGIAEGIoFGJECGLEDGIMBGJcFGNwEGN4EGOAE2AEBwgINECMYyQIY8AUYsQIYJ8ICDhAAGIAEGIoFGJECGLEDwgIEECMYJ8ICChAjGPAFGMkCGCfCAhAQABiABBgUGIcCGLEDGIMBwgINEAAYgAQYigUYQxixA8ICEBAAGIAEGIoFGEMYsQMYgwHCAgsQABiABBixAxiDAcICBRAAGIAEwgIIEAAYgAQYsQPCAgcQIxiwAhgnwgINEC4YgAQYDRixAxiDAcICChAAGIAEGA0YsQPCAg0QABiABBgNGLEDGIMBwgIQEAAYgAQYigUYDRixAxiDAcICHBAuGIAEGA0YsQMYgwEYlwUY3AQY3gQY4ATYAQGYAwDiAwQYACBd4gMEGAAgXuIDBBgAIF_iAwQYACBg4gMEGAAgYeIDBBgAIGLiAwUSATEgQIgGAZAGCLoGBggBEAEYFJIHBTEuNy4xoAfMXLIHBTAuNy4xuAf3CsIHAzItOcgHKoAIAQ&sclient=gws-wiz-serp">
+            <img src="paradise.webp" height="300px" width="300px">
+            </a>
+            <p>Paradise</p>
+            <p><B>IMBD:9/10</B></p>
+        </div>
+        <div class="card">
+            <a href="https://www.google.com/search?q=geetha+govindam+movie&rlz=1C1GCEA_en-GBIN1171IN1172&biw=1280&bih=585&sca_esv=3d2f9fa888dd4596&sxsrf=APpeQnuSnfsMq2mND32zDvfGqRRqQuCC1A%3A1790935987527&ei=s4O_apDYH4SZhvcPv8yWmAY&oq=geetha+movie&gs_lp=Egxnd3Mtd2l6LXNlcnAiDGdlZXRoYSBtb3ZpZSoGCAAYBxgeMgYQABgHGB4yCxAuGIAEGIoFGJECMgYQABgHGB4yBhAAGAcYHjIGEAAYBxgeMgYQABgHGB4yBhAAGAcYHjIGEAAYBxgeMgYQABgHGB4yBhAAGAcYHkiXLFCXAlj8HnABeAGQAQGYAc8FoAGVH6oBDTAuNS4yLjEuMC4zLjGwAQC4AQHIAQD4AQGYAgagAv8GwgIKEAAYRxjWBBiwA8ICDRAAGIAEGIoFGEMYsAPCAg4QABjkAhjWBBiwA9gBAcICFxAuGNwGGLgGGNoGGNgCGMgDGLAD2AEBwgIEECMYJ8ICChAjGPAFGMkCGCfCAhAQABiABBiKBRhDGLEDGIMBwgINEAAYgAQYigUYQxixA8ICCxAAGIAEGLEDGIMBwgIFEAAYgATCAggQABiABBixA5gDAOIDBBgAIF3iAwQYACBe4gMEGAAgX-IDBBgAIGDiAwQYACBh4gMEGAAgYogGAZAGE7oGBggBEAEYCZIHBTEuNC4xoAfhQbIHBTAuNC4xuAf0BsIHBTItNS4xyAcggAgB&sclient=gws-wiz-serp">
+            <img src="geetha govindham 2.jpg" height="300px" width="300px">
+            </a>
+            <p>Geetha Govindham</p>
+            <p><B>IMBD:8/10</B></p>
+           
+        </div>
+        <div class="card">
+            <a href="https://www.google.com/search?q=RRR+movie&rlz=1C1GCEA_en-GBIN1171IN1172&biw=1280&bih=585&sca_esv=3d2f9fa888dd4596&sxsrf=APpeQntJxWnAQps65Dn43BUuNyhzyWtHDg%3A1790935538834&ei=8oG_ao_IMu-hseMP_7zZ-Qk&uact=5&oq=RRR+movie&gs_lp=Egxnd3Mtd2l6LXNlcnAiCVJSUiBtb3ZpZTIKECMY8AUYyQIYJzIKEAAYgAQYigUYQzIKEAAYgAQYigUYQzINEC4YgAQYigUYQxixAzIKEAAYgAQYigUYQzIKEAAYgAQYigUYQzIKEAAYgAQYigUYQzIIEAAYgAQYtAcyBRAAGIAEMgoQABiABBiKBRhDSO4kULECWMkVcAF4AZABAJgBqAGgAb4JqgEDMC44sAEAuAEDyAEA-AEBmAIEoALbA8ICChAAGEcY1gQYsAPCAg0QABiABBiKBRhDGLADwgIOEAAY5AIY1gQYsAPYAQHCAhcQLhjcBhi4BhjaBhjYAhjIAxiwA9gBAcICBxAjGLECGCfCAhEQLhiABBiKBRiRAhixAxiDAcICERAAGIAEGIoFGJECGLEDGIMBwgIGEAAYBxgewgILEAAYgAQYigUYkQLCAiAQLhiABBiKBRiRAhixAxiDARiXBRjcBBjeBBjgBNgBAcICBBAjGCfCAgoQIxjJAhjwBRgnwgIQEAAYgAQYigUYQxixAxiDAcICDRAAGIAEGIoFGEMYsQPCAgsQABiABBixAxiDAcICCBAAGIAEGLEDmAMA4gMEGAAgXeIDBBgAIF7iAwQYACBf4gMEGAAgYOIDBBgAIGHiAwQYACBiiAYBkAYTugYGCAEQARgJkgcDMS4zoAerNrIHAzAuM7gH0QPCBwMyLTTIBxuACAE&sclient=gws-wiz-serp">
+            <img src="RRR.jpg" height="300px" width="300px">
+            </a>
+              <p>RRR</p>
+            <p><B>IMBD:8.5/10</B></p>
+        </div>
+         <div class="card">
+            <a href="https://www.google.com/search?rlz=1C1GCEA_en-GBIN1171IN1172&sca_esv=3d2f9fa888dd4596&sxsrf=APpeQnvbM5tdA7T3nZmqztUi62ti8A-4ig:1790935731627&q=salaar+movie&sa=X&ved=2ahUKEwivkeXAi5uXAxULjOEIHcEPAeIQ7xYoAHoECA8QAQ&biw=1280&bih=585&dpr=1.5">
+            <img src="salar.jpg" height="300px" width="300px">
+            </a>
+              <p>Salar</p>
+            <p><B>IMBD:9/10</B></p>
+        </div>
+         <div class="card">
+            <a href="https://www.google.com/search?rlz=1C1GCEA_en-GBIN1171IN1172&sca_esv=3d2f9fa888dd4596&sxsrf=APpeQnsBmNthAba_pr_5-ukMekh1KGL1Qw:1790935769193&q=julayi+movie&source=lnms&fbs=ABfTbFUb8PtXI1JNfVRzoWqb0KjKdLdUv7mNWciUBh9PqAFx0tACkRzWMn7aziyxqZtMa3ivXeX6VijYhkPiSDWcTatVQIZyymtyAOG2iUfEDWSD9v6_RgxxeM2VSQSA6T2_WV-5hkmuDGqJeeMv18-5aTFS7cdgcVGcCnJEXZQSl9gzvAHEO8zgnri7htXu5HCLVo3w7DwJBdmqhYGL7C1qsVZhbkgwTeoU2mzbF4p2f1rW4LJASNk&sa=X&sqi=2&ved=2ahUKEwihidrSi5uXAxX_juEIHUjhDaAQ0pQJegQIERAB&biw=1280&bih=585&dpr=1.5">
+            <img src="julayi.jpg" height="300px" width="300px">
+            </a>
+              <p>Julayi</p>
+            <p><B>IMBD:8/10</B></p>
+        </div>
+         <div class="card">
+            <a href="https://www.google.com/search?q=dhevara+movie&rlz=1C1GCEA_en-GBIN1171IN1172&sca_esv=3d2f9fa888dd4596&biw=1280&bih=585&sxsrf=APpeQnvKhrjCy_qDG2IpUtJBGiBH2_dHxA%3A1790935772740&ei=3IK_aoDkLLOhhvcPkcGowQ0&uact=5&oq=dhevara+movie&gs_lp=Egxnd3Mtd2l6LXNlcnAiDWRoZXZhcmEgbW92aWUyDRAjGMkCGPAFGLECGCcyERAuGIAEGIoFGJECGLEDGIMBMhEQABiABBiKBRiRAhixAxiDATILEAAYgAQYigUYkQIyCxAAGIAEGIoFGJECMgsQABiABBiKBRiRAjIJEAAYgAQYChgLMgkQABiABBgKGAsyCRAAGIAEGAoYCzIJEAAYgAQYChgLMiAQLhiABBiKBRiRAhixAxiDARiXBRjcBBjeBBjgBNgBAUjeH1DWAljrF3ABeAGQAQCYAfMCoAHZFaoBBzAuOC4yLjOwAQC4AQPIAQD4AQGYAgagAp0GwgIKEAAYRxjWBBiwA8ICDRAAGIAEGIoFGEMYsAPCAg4QABjkAhjWBBiwA9gBAcICFxAuGNwGGLgGGNoGGNgCGMgDGLAD2AEBwgIGEAAYBxgewgIEECMYJ8ICChAjGPAFGMkCGCfCAhAQABiABBgUGIcCGLEDGIMBwgINEAAYgAQYigUYQxixA8ICCxAAGIAEGLEDGIMBwgIKEAAYgAQYigUYQ8ICBRAAGIAEwgIOEC4YgAQYigUYkQIYsQPCAggQABgHGB4YCsICHRAuGIAEGIoFGJECGLEDGJcFGNwEGN4EGOAE2AEBmAMA4gMEGAAgXeIDBBgAIF7iAwQYACBf4gMEGAAgYOIDBBgAIGHiAwQYACBiiAYBkAYTugYGCAEQARgJkgcDMS41oAfsXbIHAzAuNbgHkgbCBwUyLTQuMsgHJ4AIAQ&sclient=gws-wiz-serp">
+        
+            <img src="dhevara.jpg" height="300px" width="300px">
+            </a>
+              <p>Dhevara</p>
+            <p><B>IMBD:7.5/10</B></p>
+        </div>
+    </main>
+    <footer class="footer">
+        <p>@movie reviews accroding to movie's zone 2026</p>
+    </footer>
+</body>
+</html>
